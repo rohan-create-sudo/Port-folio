@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan Singh | Full Stack Developer & E-Commerce Architect</title>
+    <meta name="description"
+        content="Portfolio of Rohan Singh, Full Stack Developer and E-Commerce Solution Manager specializing in modern 3D web applications.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;600;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Custom Cursor Disabled -->
+
+    <div id="intro-screen">
+        <canvas id="intro-canvas"></canvas>
+        <div id="intro-content">
+            <h1 class="intro-name">Rohan Singh</h1>
+            <h2 class="intro-role">Full Stack Developer & E-Commerce Architect</h2>
+        </div>
+    </div>
+
+    <div id="main-wrapper" style="opacity: 0; pointer-events: none; height: 100vh; overflow: hidden;">
+        <div class="noise-overlay"></div>
+        <header class="dynamic-header">
+            <div class="dynamic-island">
+                <nav class="desktop-nav">
+                    <ul class="nav-links">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <div class="nav-indicator"></div>
+                    </ul>
+                </nav>
+                <div class="mobile-toggle">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            <nav class="mobile-nav">
+                <ul class="mobile-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="hero section">
+                <div class="hero-bg-canvas-container">
+                    <canvas id="hero-waves-canvas"></canvas>
+                </div>
+                <div class="hero-content">
+                    <h1 class="hero-title">ROHAN<br>SINGH</h1>
+                    <div class="hero-subtitle-container">
+                        <p class="hero-subtitle typing-text"></p><span class="typing-cursor">|</span>
+                    </div>
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-glow-blue"><span class="btn-text">View Projects</span></a>
+                        <a href="#contact" class="btn btn-glow-red"><span class="btn-text">Hire Me</span></a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="wave-separator">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path d="M0,60 C320,120 420,0 720,60 C1020,120 1120,0 1440,60 L1440,120 L0,120 Z"></path>
+                </svg>
+            </div>
+
+            <section id="about" class="about section">
+                <div class="container section-title-container">
+                    <h2 class="section-title">About Me <span class="title-outline">Profile</span></h2>
+                </div>
+                <div class="container about-container">
+                    <div class="about-card glass-card tilt-card" data-tilt>
+                        <div class="about-glow"></div>
+                        <div class="about-content">
+                            <p class="bio">Rohan Singh is a Full Stack Developer and E-Commerce Solution Manager
+                                specializing in scalable web applications, secure backend systems, modern UI/UX design,
+                                and complete online business solutions.</p>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <h3 class="stat-number" data-target="50">0</h3>
+                                    <p class="stat-label">Projects Completed</p>
+                                    <span class="plus">+</span>
+                                </div>
+                                <div class="stat-item">
+                                    <h3 class="stat-number" data-target="3">0</h3>
+                                    <p class="stat-label">Years Experience</p>
+                                    <span class="plus">+</span>
+                                </div>
+                                <div class="stat-item">
+                                    <h3 class="stat-number" data-target="20">0</h3>
+                                    <p class="stat-label">E-Commerce Stores</p>
+                                    <span class="plus">+</span>
+                                </div>
+                                <div class="stat-item">
+                                    <h3 class="stat-number" data-target="100">0</h3>
+                                    <p class="stat-label">Client Satisfaction</p>
+                                    <span class="plus">%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="wave-separator alt">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path d="M0,60 C320,120 420,0 720,60 C1020,120 1120,0 1440,60 L1440,120 L0,120 Z"></path>
+                </svg>
+            </div>
+
+            <section id="skills" class="skills section">
+                <div class="container section-title-container">
+                    <h2 class="section-title">My Skills <span class="title-outline">Expertise</span></h2>
+                </div>
+                <div class="skills-cloud-container">
+                    <div class="skill-pill" style="animation-delay: 0.1s">ReactJS</div>
+                    <div class="skill-pill" style="animation-delay: 0.3s">NextJS</div>
+                    <div class="skill-pill" style="animation-delay: 0.5s">TypeScript</div>
+                    <div class="skill-pill" style="animation-delay: 0.2s">Tailwind CSS</div>
+                    <div class="skill-pill" style="animation-delay: 0.4s">Motion</div>
+                    <div class="skill-pill" style="animation-delay: 0.6s">Zustand</div>
+                    <div class="skill-pill" style="animation-delay: 0.1s">Expo</div>
+                    <div class="skill-pill" style="animation-delay: 0.3s">NodeJS</div>
+                    <div class="skill-pill" style="animation-delay: 0.5s">ExpressJS</div>
+                    <div class="skill-pill" style="animation-delay: 0.2s">PostgreSQL</div>
+                    <div class="skill-pill" style="animation-delay: 0.4s">MongoDB</div>
+                    <div class="skill-pill" style="animation-delay: 0.6s">Prisma</div>
+                    <div class="skill-pill" style="animation-delay: 0.1s">Zod</div>
+                    <div class="skill-pill" style="animation-delay: 0.3s">Git & GitHub</div>
+                    <div class="skill-pill" style="animation-delay: 0.5s">Vercel</div>
+                    <div class="skill-pill" style="animation-delay: 0.2s">AWS</div>
+                    <div class="skill-pill" style="animation-delay: 0.4s">Docker</div>
+                    <div class="skill-pill" style="animation-delay: 0.6s">Clerk</div>
+                    <div class="skill-pill" style="animation-delay: 0.1s">Linux</div>
+                    <div class="skill-pill" style="animation-delay: 0.3s">pnpm & Bun</div>
+                    <div class="skill-pill" style="animation-delay: 0.5s">Sanity</div>
+                    <div class="skill-pill" style="animation-delay: 0.2s">Contentful</div>
+                    <div class="skill-pill" style="animation-delay: 0.4s">Shopify</div>
+                    <div class="skill-pill" style="animation-delay: 0.6s">WooCommerce</div>
+                    <div class="skill-pill" style="animation-delay: 0.1s">WordPress</div>
+                    <div class="skill-pill" style="animation-delay: 0.3s">Hostinger</div>
+                    <div class="skill-pill" style="animation-delay: 0.5s">VS Code</div>
+                    <div class="skill-pill" style="animation-delay: 0.2s">Kotlin</div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects section">
+                <div class="container section-title-container">
+                    <h2 class="section-title">Featured Work <span class="title-outline">Projects</span></h2>
+                </div>
+                <div class="projects-carousel-wrapper">
+                    <div class="projects-track">
+
+                        <!-- Project 1 -->
+                        <div class="project-slide tilt-card glass-card" data-tilt>
+                            <div class="project-image">
+                                <img src="assets/portfolio.png" alt="Portfolio" class="project-img-real"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="image-placeholder bg-gradient-1" style="display:none;"></div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Portfolio site</h3>
+                                <p>A sleek, interactive portfolio showcasing creative projects, skills, and digital craftsmanship.</p>
+                                <a href="https://rohan-create-sudo.github.io/Portfolio/Main.html" target="_blank" class="view-btn">View Live <i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 2 -->
+                        <div class="project-slide tilt-card glass-card" data-tilt>
+                            <div class="project-image">
+                                <img src="assets/car.png" alt="Car" class="project-img-real"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="image-placeholder bg-gradient-1" style="display:none;"></div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Car Detailing site</h3>
+                                <p>A premium digital showroom highlighting professional car detailing, restoration, and shine services.</p>
+                                <a href="https://rohan-create-sudo.github.io/Car-detailing/" target="_blank" class="view-btn">View Live <i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="project-slide tilt-card glass-card" data-tilt>
+                            <div class="project-image">
+                                <img src="assets/Custom.png" alt="Car" class="project-img-real"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="image-placeholder bg-gradient-1" style="display:none;"></div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Custom Kart E-commerce</h3>
+                                <p>A playful yet premium space where aesthetic ideas turn into beautifully personalized creations.</p>
+                                <a href="https://rohan-create-sudo.github.io/Custom-Kart/" target="_blank" class="view-btn">View Live <i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Project 4 -->
+                        <div class="project-slide tilt-card glass-card" data-tilt>
+                            <div class="project-image">
+                                <img src="assets/lemon.png" alt="Lemon Shop" class="project-img-real"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="image-placeholder bg-gradient-1" style="display:none;"></div>
+                            </div>
+                            <div class="project-info">
+                                <h3>E-Commerce Shopping Site</h3>
+                                <p>Lemon Shop is an Online E-commerce Website. That is Currently Active for shopping by
+                                    Rohan Singh.</p>
+                                <a href="https://lemonshop.in/" target="_blank" class="view-btn">View Live <i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- Project 5 -->
+                        <div class="project-slide tilt-card glass-card" data-tilt>
+                            <div class="project-image">
+                                <img src="assets/jewel.png" alt="Jewel Site" class="project-img-real"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="image-placeholder bg-gradient-2" style="display:none;"></div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Jewel Site</h3>
+                                <p>A smooth, ultra-premium jewelry website experience with elegant animations, fluid
+                                    transitions, and refined visuals that radiate sophistication and timeless luxury.
+                                </p>
+                                <a href="https://rohan-create-sudo.github.io/jewel/" target="_blank"
+                                    class="view-btn">View Live <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- Project 6 -->
+                        <div class="project-slide tilt-card glass-card" data-tilt>
+                            <div class="project-image">
+                                <img src="assets/Bakery.png" alt="Bakery Site" class="project-img-real"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="image-placeholder bg-gradient-3" style="display:none;"></div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Bakery Site</h3>
+                                <p>A playful, interactive bakery website featuring delightful animations, smooth
+                                    transitions, and a mobile-first design that brings the brand to life.</p>
+                                <a href="https://rohan-create-sudo.github.io/Bakery-Shop/" target="_blank"
+                                    class="view-btn">View Live <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- Project 7 -->
+                        <div class="project-slide tilt-card glass-card" data-tilt>
+                            <div class="project-image">
+                                <img src="assets/Real-Estate.png" alt="Real Estate Site" class="project-img-real"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="image-placeholder bg-gradient-4" style="display:none;"></div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Real Estate Site</h3>
+                                <p>A modern real estate platform designed with intuitive navigation, engaging property
+                                    showcases, and responsive performance across all devices.</p>
+                                <a href="https://rohan-create-sudo.github.io/Real-Estate/" target="_blank"
+                                    class="view-btn">View Live <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- Project 8 -->
+                        <div class="project-slide tilt-card glass-card" data-tilt>
+                            <div class="project-image">
+                                <img src="assets/Clinic.png" alt="Clinic Site" class="project-img-real"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="image-placeholder bg-gradient-5" style="display:none;"></div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Clinic Site</h3>
+                                <p>A modern healthcare website with structured layouts, user-friendly navigation, and
+                                    responsive optimized performance.</p>
+                                <a href="https://rohan-create-sudo.github.io/Clinic/" target="_blank"
+                                    class="view-btn">View Live <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="services section">
+                <div class="container section-title-container">
+                    <h2 class="section-title">What I Do <span class="title-outline">Services</span></h2>
+                </div>
+                <div class="container services-grid">
+                    <div class="service-block glass-card tilt-card" data-tilt>
+                        <div class="service-icon"><i class="fas fa-code"></i></div>
+                        <h3>Full Stack Development</h3>
+                        <p>End-to-end web applications built with modern frameworks and robust architectures.</p>
+                    </div>
+                    <div class="service-block glass-card tilt-card" data-tilt>
+                        <div class="service-icon"><i class="fas fa-store"></i></div>
+                        <h3>E-Commerce Store Development</h3>
+                        <p>High-converting Shopify and custom online stores with seamless payment flows.</p>
+                    </div>
+                    <div class="service-block glass-card tilt-card" data-tilt>
+                        <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>UI/UX Design & 3D Websites</h3>
+                        <p>Immersive, interactive experiences that elevate brand identity and user engagement.</p>
+                    </div>
+                    <div class="service-block glass-card tilt-card" data-tilt>
+                        <div class="service-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <h3>Performance Optimization</h3>
+                        <p>Speeding up existing applications, optimizing assets, and improving core web vitals.</p>
+                    </div>
+                    <div class="service-block glass-card tilt-card md-span-2" data-tilt>
+                        <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3>Website Redesign & Scaling</h3>
+                        <p>Modernizing legacy systems and preparing architectures to handle massive traffic.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="experience section">
+                <div class="container section-title-container">
+                    <h2 class="section-title">Process <span class="title-outline">Workflow</span></h2>
+                </div>
+                <div class="container timeline-container">
+                    <div class="timeline-line">
+                        <div class="timeline-progress"></div>
+                    </div>
+                    <div class="timeline-items">
+                        <div class="timeline-item right">
+                            <div class="timeline-dot"><i class="fas fa-search"></i></div>
+                            <div class="timeline-content glass-card tilt-card" data-tilt>
+                                <h3>Discovery & Planning</h3>
+                                <p>Understanding requirements and defining the technical roadmap.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item left">
+                            <div class="timeline-dot"><i class="fas fa-pencil-ruler"></i></div>
+                            <div class="timeline-content glass-card tilt-card" data-tilt>
+                                <h3>Design & Architecture</h3>
+                                <p>Creating UI layouts, 3D prototypes, and system architecture.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item right">
+                            <div class="timeline-dot"><i class="fas fa-laptop"></i></div>
+                            <div class="timeline-content glass-card tilt-card" data-tilt>
+                                <h3>Development</h3>
+                                <p>Writing clean, scalable code for frontend and backend components.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item left">
+                            <div class="timeline-dot"><i class="fas fa-bug"></i></div>
+                            <div class="timeline-content glass-card tilt-card" data-tilt>
+                                <h3>Testing & Optimization</h3>
+                                <p>Ensuring cross-browser compatibility, security, and peak performance.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item right">
+                            <div class="timeline-dot"><i class="fas fa-rocket"></i></div>
+                            <div class="timeline-content glass-card tilt-card" data-tilt>
+                                <h3>Launch & Scaling</h3>
+                                <p>Deploying to production and monitoring infrastructure for scale.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact section">
+                <div class="container section-title-container">
+                    <h2 class="section-title">Get In Touch <span class="title-outline">Contact</span></h2>
+                </div>
+                <div class="container contact-container">
+                    <div class="contact-info glass-card tilt-card" data-tilt>
+                        <h3>Let's Build Something<br><span class="highlight-blue">Amazing together.</span></h3>
+                        <p>Open for new opportunities and exciting collaborations. Reach out to discuss your next
+                            project.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="icon-wrap"><i class="fas fa-envelope"></i></div>
+                                <span>rohan.connect.now@gmail.com</span>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="icon-wrap"><i class="fab fa-whatsapp"></i></div>
+                                <span>+91 9821962437</span>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+                                <span>Global / Remote</span>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/rohan-create-sudo" target="_blank" class="social-icon"
+                                title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://x.com/rohan_connect" target="_blank" class="social-icon"
+                                title="Twitter / X"><i class="fab fa-twitter"></i></a>
+                            <a href="https://instagram.com/rohan.connect" target="_blank" class="social-icon"
+                                title="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Contact & Booking Container -->
+                    <div class="contact-actions-container">
+                        <!-- Standard Form -->
+                        <div class="contact-form-wrapper glass-card tilt-card" data-tilt id="standard-contact-form">
+                            <div class="form-header">
+                                <h4>Send a Message</h4>
+                                <button type="button" class="switch-form-btn" id="btn-show-booking">Schedule Call
+                                    Instead <i class="fas fa-calendar-alt"></i></button>
+                            </div>
+                            <form id="contact-form" onsubmit="handleFormSubmit(event)">
+                                <div class="form-group">
+                                    <input type="text" id="name" required placeholder=" ">
+                                    <label for="name">Your Name</label>
+                                    <div class="focus-border"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" required placeholder=" ">
+                                    <label for="email">Your Email</label>
+                                    <div class="focus-border"></div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" required rows="4" placeholder=" "></textarea>
+                                    <label for="message">Project Details</label>
+                                    <div class="focus-border"></div>
+                                </div>
+                                <button type="submit" class="btn btn-glow-blue btn-submit">
+                                    <span class="btn-text">Send Details <i class="fas fa-paper-plane"></i></span>
+                                </button>
+                                <p class="success-message"
+                                    style="display:none; color:var(--accent-blue); margin-top:15px; font-size:0.9rem;">
+                                    Details have been submitted. Thank you for contacting!</p>
+                            </form>
+                        </div>
+
+                        <!-- Booking Calendar Form -->
+                        <div class="contact-form-wrapper glass-card tilt-card" data-tilt id="booking-calendar-form"
+                            style="display: none;">
+                            <div class="form-header">
+                                <h4>Schedule a Call</h4>
+                                <button type="button" class="switch-form-btn" id="btn-show-contact"><i
+                                        class="fas fa-arrow-left"></i> Back to Message</button>
+                            </div>
+                            <form id="booking-form" onsubmit="handleFormSubmit(event)">
+                                <div class="form-group">
+                                    <input type="text" id="book-name" required placeholder=" ">
+                                    <label for="book-name">Your Name</label>
+                                    <div class="focus-border"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="book-email" required placeholder=" ">
+                                    <label for="book-email">Your Email</label>
+                                    <div class="focus-border"></div>
+                                </div>
+                                <div class="calendar-selection">
+                                    <div class="form-group">
+                                        <input type="date" id="book-date" required class="premium-date">
+                                    </div>
+                                    <div class="time-slots-container">
+                                        <label>Available Times</label>
+                                        <div class="time-slots" id="time-slots">
+                                            <!-- Generated via JS -->
+                                        </div>
+                                        <input type="hidden" id="selected-time" required>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-glow-blue btn-submit">
+                                    <span class="btn-text">Book Appointment <i class="fas fa-calendar-check"></i></span>
+                                </button>
+                                <p class="success-message"
+                                    style="display:none; color:var(--accent-blue); margin-top:15px; font-size:0.9rem;">
+                                    Details have been submitted. Thank you for scheduling!</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2026 Rohan Singh. All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
