@@ -168,7 +168,7 @@ function initMainAnimations() {
 
     // Typing Effect for Subtitle
     const typingText = document.querySelector('.typing-text');
-    const textToType = "Creating modern 3D experiences & scalable architectures.";
+    const textToType = "Expert in Social Media Managing, Website Development, Video Editing & Marketing.";
     let charIndex = 0;
 
     function typeWriter() {
@@ -306,7 +306,7 @@ function initMainAnimations() {
     });
 
     // Fade up sections on scroll
-    const sections = gsap.utils.toArray('.section-title-container, .about-card, .skill-category, .service-block, .timeline-item, .contact-info, .contact-form-wrapper');
+    const sections = gsap.utils.toArray('.section-title-container, .about-card, .skill-category, .service-block, .timeline-item, .contact-info, .contact-form-wrapper, .creative-card, .reveal-video');
     sections.forEach(sec => {
         gsap.fromTo(sec,
             { opacity: 0, y: 50 },
@@ -317,7 +317,18 @@ function initMainAnimations() {
                 scrollTrigger: {
                     trigger: sec,
                     start: "top 85%",
-                    toggleActions: "play none none reverse"
+                    toggleActions: "play none none reverse",
+                    onEnter: () => {
+                        // Play videos if they are inside this section
+                        const videos = sec.querySelectorAll('video');
+                        videos.forEach(v => {
+                            if(v.paused) v.play().catch(e => console.log('Video play error:', e));
+                        });
+                        // Add revealed class if it is a video wrapper (triggering nested animations if any)
+                        if (sec.classList.contains('reveal-video')) {
+                            sec.classList.add('revealed');
+                        }
+                    }
                 }
             }
         );
